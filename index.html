@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Coach Landing Page</title>
+  <title>CoachName | Premium Fitness Coaching</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f7f7; /* white-silver */
+      color: #1e3a2f; /* deep green */
+    }
+    a { transition: all 0.3s ease; }
+  </style>
 </head>
 <body class="scroll-smooth">
 
@@ -12,11 +20,14 @@
   <header class="w-full py-6 px-8 flex justify-between items-center shadow-md bg-white fixed top-0 z-50">
     <div class="text-2xl font-bold">CoachName</div>
     <nav class="space-x-6 hidden md:flex">
+      <a href="#home" class="hover:text-gray-600">Home</a>
       <a href="#about" class="hover:text-gray-600">About</a>
-      <a href="#services" class="hover:text-gray-600">Services</a>
+      <a href="#programs" class="hover:text-gray-600">Programs</a>
+      <a href="#results" class="hover:text-gray-600">Results</a>
       <a href="#testimonials" class="hover:text-gray-600">Testimonials</a>
-      <a href="#booking" class="hover:text-gray-600">Book Now</a>
-      <a href="#contact" class="hover:text-gray-600">Contact</a>
+      <a href="#blog" class="hover:text-gray-600">Blog</a>
+      <a href="#faq" class="hover:text-gray-600">FAQ</a>
+      <a href="#booking" class="hover:text-gray-600">Book</a>
     </nav>
     <a href="#booking" class="md:block bg-green-800 text-white px-5 py-2 rounded hover:bg-green-900">Book Now</a>
     <button class="md:hidden" id="menu-btn">☰</button>
@@ -24,91 +35,165 @@
 
   <!-- Mobile Menu -->
   <div class="md:hidden hidden fixed top-20 right-8 bg-white shadow-lg p-4 rounded" id="mobile-menu">
+    <a href="#home" class="block py-2">Home</a>
     <a href="#about" class="block py-2">About</a>
-    <a href="#services" class="block py-2">Services</a>
+    <a href="#programs" class="block py-2">Programs</a>
+    <a href="#results" class="block py-2">Results</a>
     <a href="#testimonials" class="block py-2">Testimonials</a>
+    <a href="#blog" class="block py-2">Blog</a>
+    <a href="#faq" class="block py-2">FAQ</a>
     <a href="#booking" class="block py-2">Book Now</a>
-    <a href="#contact" class="block py-2">Contact</a>
   </div>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6" style="background-color:#f0f0f0;">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Transform Your Fitness Journey</h1>
+  <!-- Home / Hero -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6" style="background-color:#f0f0f0;">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Transform Your Fitness Journey</h1>
     <p class="text-lg md:text-xl mb-8 max-w-xl">Personalized coaching to help you reach your health goals faster, smarter, and stronger.</p>
     <a href="#booking" class="bg-green-800 text-white px-8 py-3 rounded-lg text-lg hover:bg-green-900">Book Your Free Session</a>
     <div class="mt-12 flex space-x-6">
-      <!-- Placeholder for trust logos or small testimonial images -->
       <img src="https://via.placeholder.com/80x40" alt="Logo 1" class="grayscale">
       <img src="https://via.placeholder.com/80x40" alt="Logo 2" class="grayscale">
       <img src="https://via.placeholder.com/80x40" alt="Logo 3" class="grayscale">
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About / Philosophy -->
   <section id="about" class="py-20 px-8 flex flex-col md:flex-row items-center max-w-7xl mx-auto gap-12">
     <div class="md:w-1/2">
       <img src="https://via.placeholder.com/500x500" alt="Coach Image" class="rounded-lg shadow-lg">
     </div>
     <div class="md:w-1/2">
       <h2 class="text-3xl font-bold mb-4">About CoachName</h2>
-      <p class="mb-4">With over 10 years of experience, CoachName specializes in personalized fitness coaching that guarantees real results. From beginners to seasoned athletes, the programs are designed to transform your health, body, and mindset.</p>
-      <p class="mb-4">Certified in nutrition and strength training, CoachName combines science-backed strategies with motivational guidance for long-lasting results.</p>
+      <p class="mb-4">CoachName combines science-backed fitness strategies with a motivational coaching approach to deliver real results. Over 10 years of experience transforming lives.</p>
+      <p class="mb-4">Certified in personal training, nutrition, and lifestyle optimization, CoachName ensures each program is tailored for maximum results.</p>
       <a href="#booking" class="inline-block mt-4 bg-green-800 text-white px-6 py-2 rounded hover:bg-green-900">Start Your Journey</a>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-20 px-8 bg-white">
+  <!-- Programs / Services -->
+  <section id="programs" class="py-20 px-8 bg-white">
     <div class="max-w-6xl mx-auto text-center mb-12">
-      <h2 class="text-3xl font-bold mb-4">Our Services</h2>
-      <p>Choose a program that fits your lifestyle and goals.</p>
+      <h2 class="text-3xl font-bold mb-4">Programs & Services</h2>
+      <p>Flexible programs tailored to your goals.</p>
     </div>
     <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-      <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+      <!-- Program Card Example -->
+      <div class="p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
         <img src="https://via.placeholder.com/100" alt="Personal Training" class="mx-auto mb-4">
         <h3 class="text-xl font-semibold mb-2 text-center">Personal Training</h3>
-        <p class="text-center">One-on-one sessions to ensure personalized guidance and results-driven workouts.</p>
+        <p class="text-center mb-2">One-on-one sessions with customized workouts to guarantee results.</p>
+        <a href="#booking" class="block text-center mt-2 bg-green-800 text-white px-4 py-2 rounded hover:bg-green-900">Join Now</a>
       </div>
-      <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+      <div class="p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
         <img src="https://via.placeholder.com/100" alt="Online Coaching" class="mx-auto mb-4">
         <h3 class="text-xl font-semibold mb-2 text-center">Online Coaching</h3>
-        <p class="text-center">Flexible virtual coaching tailored to your schedule and goals anywhere in the world.</p>
+        <p class="text-center mb-2">Flexible coaching you can access anywhere, anytime.</p>
+        <a href="#booking" class="block text-center mt-2 bg-green-800 text-white px-4 py-2 rounded hover:bg-green-900">Join Now</a>
       </div>
-      <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+      <div class="p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
         <img src="https://via.placeholder.com/100" alt="Nutrition Plans" class="mx-auto mb-4">
         <h3 class="text-xl font-semibold mb-2 text-center">Nutrition Plans</h3>
-        <p class="text-center">Custom meal plans designed to complement your fitness program and lifestyle.</p>
+        <p class="text-center mb-2">Tailored meal plans to complement your training for maximum results.</p>
+        <a href="#booking" class="block text-center mt-2 bg-green-800 text-white px-4 py-2 rounded hover:bg-green-900">Join Now</a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="py-20 px-8 bg-gray-100">
+  <!-- Results / Transformations -->
+  <section id="results" class="py-20 px-8 bg-gray-100">
     <div class="max-w-6xl mx-auto text-center mb-12">
-      <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
-      <p>Real results, real stories.</p>
+      <h2 class="text-3xl font-bold mb-4">Results & Transformations</h2>
+      <p>See real client transformations and measurable success.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="relative">
+        <img src="https://via.placeholder.com/400x400" alt="Before/After 1" class="rounded-lg shadow-lg">
+        <div class="absolute bottom-0 bg-green-800 bg-opacity-70 text-white p-2 rounded-b-lg text-center">Client A</div>
+      </div>
+      <div class="relative">
+        <img src="https://via.placeholder.com/400x400" alt="Before/After 2" class="rounded-lg shadow-lg">
+        <div class="absolute bottom-0 bg-green-800 bg-opacity-70 text-white p-2 rounded-b-lg text-center">Client B</div>
+      </div>
+      <div class="relative">
+        <img src="https://via.placeholder.com/400x400" alt="Before/After 3" class="rounded-lg shadow-lg">
+        <div class="absolute bottom-0 bg-green-800 bg-opacity-70 text-white p-2 rounded-b-lg text-center">Client C</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 px-8 bg-white">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Client Testimonials</h2>
+      <p>What our clients say about their journey.</p>
     </div>
     <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-      <div class="p-6 bg-white rounded-lg shadow-lg">
-        <p>"CoachName helped me lose 20 pounds in 3 months! Incredible guidance and support."</p>
+      <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+        <p>"I lost 20 pounds in 3 months! Incredible coaching."</p>
         <h4 class="mt-4 font-semibold">– Client A</h4>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow-lg">
-        <p>"I never thought online coaching could be this effective. Highly recommend!"</p>
+      <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+        <p>"Online coaching was convenient and effective. Highly recommend."</p>
         <h4 class="mt-4 font-semibold">– Client B</h4>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow-lg">
-        <p>"The nutrition plan was a game-changer. I feel stronger and healthier than ever."</p>
+      <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+        <p>"Nutrition plans and workouts combined perfectly. Amazing results."</p>
         <h4 class="mt-4 font-semibold">– Client C</h4>
       </div>
     </div>
   </section>
 
-  <!-- Booking Section -->
-  <section id="booking" class="py-20 px-8 bg-white">
+  <!-- Blog / Tips -->
+  <section id="blog" class="py-20 px-8 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Fitness Tips & Blog</h2>
+      <p>Insights, tips, and guidance for a healthy lifestyle.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-6 bg-white rounded-lg shadow-lg">
+        <img src="https://via.placeholder.com/300x200" alt="Blog 1" class="rounded mb-4">
+        <h3 class="font-semibold mb-2">5 Workouts for Busy Professionals</h3>
+        <p class="text-sm">Learn quick, effective exercises you can do anytime.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-lg">
+        <img src="https://via.placeholder.com/300x200" alt="Blog 2" class="rounded mb-4">
+        <h3 class="font-semibold mb-2">Nutrition Myths Debunked</h3>
+        <p class="text-sm">Understand the truth behind common nutrition misconceptions.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-lg">
+        <img src="https://via.placeholder.com/300x200" alt="Blog 3" class="rounded mb-4">
+        <h3 class="font-semibold mb-2">Mindset & Motivation Tips</h3>
+        <p class="text-sm">Keep your motivation high and achieve your fitness goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 px-8 bg-white">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+    </div>
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="border rounded-lg p-4 cursor-pointer faq-item">
+        <h4 class="font-semibold">What if I am a beginner?</h4>
+        <p class="mt-2 hidden">All programs are customizable, from beginner to advanced levels.</p>
+      </div>
+      <div class="border rounded-lg p-4 cursor-pointer faq-item">
+        <h4 class="font-semibold">How do I track my progress?</h4>
+        <p class="mt-2 hidden">You will receive personalized progress reports and guidance.</p>
+      </div>
+      <div class="border rounded-lg p-4 cursor-pointer faq-item">
+        <h4 class="font-semibold">Can I do online coaching?</h4>
+        <p class="mt-2 hidden">Yes, all programs are available online with real-time guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking / Contact -->
+  <section id="booking" class="py-20 px-8 bg-gray-100">
     <div class="max-w-4xl mx-auto text-center mb-12">
       <h2 class="text-3xl font-bold mb-4">Book Your Session</h2>
-      <p>Secure your spot with CoachName today. Limited slots available.</p>
+      <p>Limited spots available. Secure your session today.</p>
     </div>
     <form class="max-w-2xl mx-auto grid gap-6">
       <input type="text" placeholder="Full Name" class="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800">
@@ -125,8 +210,8 @@
     </form>
   </section>
 
-  <!-- Contact / Footer Section -->
-  <footer id="contact" class="bg-gray-200 py-12 px-8">
+  <!-- Footer -->
+  <footer class="bg-white py-12 px-8 shadow-inner">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
       <div>
         <h3 class="font-bold mb-4">Contact</h3>
