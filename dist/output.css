@@ -840,6 +840,11 @@ video {
   background-color: rgb(238 245 240 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#ADF802\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(173 248 2 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
