@@ -81,10 +81,14 @@
   id="home"
   class="min-h-screen bg-[#14261e] flex items-center"
 >
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-32">
+  <div
+    class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch pt-24 md:pt-28"
+  >
 
     <!-- Left Content -->
-    <div class="text-white">
+    <div
+      class="flex flex-col justify-center text-white text-center md:text-left"
+    >
       <span class="uppercase tracking-widest text-sm opacity-80">
         Elite Personal Fitness Coaching
       </span>
@@ -94,13 +98,15 @@
         and a Body That Lasts
       </h1>
 
-      <p class="mt-6 text-lg opacity-90 max-w-xl">
+      <p class="mt-6 text-lg opacity-90 max-w-xl mx-auto md:mx-0">
         Evidence-based training, personalized programs, and mindset coaching
         designed for professionals who want real, sustainable results.
       </p>
 
       <!-- Authority / Trust -->
-      <div class="mt-8 flex gap-8 text-sm opacity-90">
+      <div
+        class="mt-8 flex flex-wrap justify-center md:justify-start gap-8 text-sm opacity-90"
+      >
         <div>
           <span class="block text-2xl font-bold">10+</span>
           Years Experience
@@ -116,7 +122,9 @@
       </div>
 
       <!-- CTAs -->
-      <div class="mt-10 flex flex-wrap gap-4">
+      <div
+        class="mt-10 flex flex-wrap justify-center md:justify-start gap-4"
+      >
         <a
           href="#booking"
           class="bg-white text-[#14261e] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
@@ -132,11 +140,13 @@
       </div>
     </div>
 
-    <!-- Right Image -->
-    <div class="relative">
-      <div class="rounded-3xl overflow-hidden shadow-2xl">
+    <!-- Right Image (Fixed, Controlled) -->
+    <div class="flex items-center justify-center">
+      <div
+        class="w-full max-w-md md:max-w-lg aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl"
+      >
         <img
-          src="https://images.unsplash.com/photo-1594737625785-c00d6c8f0f7a"
+          src="YOUR_IMAGE_HERE"
           alt="Fitness Coach"
           class="w-full h-full object-cover"
         />
@@ -146,8 +156,7 @@
   </div>
 </section>
 
-
-  <!-- About / Philosophy -->
+<!-- About / Philosophy -->
   <section id="about" class="py-20 px-8 flex flex-col md:flex-row items-center max-w-7xl mx-auto gap-12">
     <div class="md:w-1/2">
       <img src="https://avatars.mds.yandex.net/i?id=b2f4635418c46d90d1eef63a38cda5abb761d38c-4831580-images-thumbs&n=13" alt="Coach Image" class="rounded-lg shadow-lg">
