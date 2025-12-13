@@ -13,7 +13,7 @@
   <!-- Header -->
 <header
   id="site-header"
-  class="fixed top-0 left-0 w-full z-50 transition-transform duration-300"
+  class="fixed top-0 left-0 w-full z-50 transition-transform duration-350"
 >
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
@@ -143,7 +143,7 @@
     <!-- Right Image (Reduced Height, Premium Control) -->
     <div class="flex items-start md:items-center justify-center md:justify-end">
       <div
-        class="w-full max-w-sm md:max-w-md h-[400px] md:h-[480px] rounded-3xl overflow-hidden shadow-2xl"
+        class="w-full max-w-sm md:max-w-md h-[400px] md:h-[480px] rounded-3xl overflow-hidden shadow-2xl opacity-50"
       >
         <img
           src="https://avatars.mds.yandex.net/i?id=53d648d993fce3ce4fd28225360b5c7095a403ef-4120615-images-thumbs&n=13"
@@ -156,18 +156,77 @@
   </div>
 </section>
 
-  <!-- About / Philosophy -->
-  <section id="about" class="py-20 px-8 flex flex-col md:flex-row items-center max-w-7xl mx-auto gap-12">
-    <div class="md:w-1/2">
-      <img src="https://avatars.mds.yandex.net/i?id=b2f4635418c46d90d1eef63a38cda5abb761d38c-4831580-images-thumbs&n=13" alt="Coach Image" class="rounded-lg shadow-lg">
+<!-- About / Philosophy -->
+<section
+  id="about"
+  class="relative bg-[#eef5f0] py-28 overflow-hidden"
+>
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    <!-- Text Content -->
+    <div>
+      <!-- Eyebrow -->
+      <span class="uppercase tracking-widest text-sm text-[#5f7d6b]">
+        Coaching Philosophy
+      </span>
+
+      <!-- Headline -->
+      <h2 class="mt-4 text-4xl md:text-5xl font-bold text-[#14261e] leading-tight">
+        Training Built on Discipline,<br class="hidden md:block" />
+        Not Shortcuts
+      </h2>
+
+      <!-- Story -->
+      <p class="mt-6 text-lg text-[#3f554a] max-w-xl">
+        Holcomb-GH believes real transformation comes from structured training,
+        evidence-based programming, and mental resilience — not trends or quick
+        fixes.
+      </p>
+
+      <p class="mt-4 text-[#3f554a] max-w-xl">
+        With over a decade of hands-on coaching experience, every program is
+        designed to fit your lifestyle while pushing you toward measurable,
+        sustainable results.
+      </p>
+
+      <!-- Authority Points -->
+      <div class="mt-8 flex flex-wrap gap-6">
+        <div class="bg-white px-6 py-4 rounded-2xl shadow-sm">
+          <span class="block text-2xl font-bold text-[#14261e]">10+</span>
+          <span class="text-sm text-[#5f7d6b]">Years Coaching</span>
+        </div>
+        <div class="bg-white px-6 py-4 rounded-2xl shadow-sm">
+          <span class="block text-2xl font-bold text-[#14261e]">500+</span>
+          <span class="text-sm text-[#5f7d6b]">Clients Transformed</span>
+        </div>
+        <div class="bg-white px-6 py-4 rounded-2xl shadow-sm">
+          <span class="block text-2xl font-bold text-[#14261e]">Science</span>
+          <span class="text-sm text-[#5f7d6b]">Backed Methods</span>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a
+        href="#booking"
+        class="inline-block mt-10 bg-[#14261e] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition"
+      >
+        Start Your Transformation
+      </a>
     </div>
-    <div class="md:w-1/2">
-      <h2 class="text-3xl font-bold mb-4">About CoachName</h2>
-      <p class="mb-4">CoachName combines science-backed fitness strategies with a motivational coaching approach to deliver real results. Over 10 years of experience transforming lives.</p>
-      <p class="mb-4">Certified in personal training, nutrition, and lifestyle optimization, CoachName ensures each program is tailored for maximum results.</p>
-      <a href="#booking" class="inline-block mt-4 bg-green-800 text-white px-6 py-2 rounded hover:bg-green-900">Start Your Journey</a>
+
+    <!-- Image -->
+    <div class="relative flex justify-center md:justify-end">
+      <div class="w-full max-w-md h-[460px] rounded-3xl overflow-hidden shadow-xl">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=b2f4635418c46d90d1eef63a38cda5abb761d38c-4831580-images-thumbs&n=13"
+          alt="Coach Portrait"
+          class="w-full h-full object-cover"
+        />
+      </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- Programs / Services -->
   <section id="programs" class="py-20 px-8 bg-white">
